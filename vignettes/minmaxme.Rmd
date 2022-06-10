@@ -26,12 +26,19 @@ library(normalizeme)
 
 # And a shortcut for the other packages this function needs
 library(tidyr)
+library(dplyr)
+library(readr)
+library(stringr)
+library(purrr)
+library(forcats)
 library(ggplot2)
 
 # After loading in the package we normalize the raw data column using minmax
-  #output <- minmax(x = dataisme$raw_values)
+  output <- minmax(x = dataisme$raw_values)
 # Then we run the output through organizeme() to get a df back
-  #organized_output <- organizeme(data = dataisme, minmax_output = output) 
+  organized_output <- organizeme(data = dataisme, minmax_output = output) 
 # See the output from the functions:
-  #organized_output
+  organized_output
 ```
+
+As you can see we get the three columns we want. Good luck using this package!
