@@ -1,0 +1,37 @@
+---
+title: "Min-maxing with Me"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{minmaxme}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## normalizeme()
+
+This package is meant to help with the normalization of data frame (df) columns in a min-max type normalization. By design the most important functions are minmax() and organizeme(). While minmax() is a very basic min-max scaling calculation the second important function organizeme() helps with the wrangling of the minmax() output back into a neat and tidy df. 
+
+Lets try both of them out:
+
+```{r setup, message=FALSE, warning=FALSE, echo=TRUE}
+# Load in this package 
+library(normalizeme)
+
+# And a shortcut for the other packages this function needs
+library(tidyr)
+library(ggplot2)
+
+# After loading in the package we normalize the raw data column using minmax
+  #output <- minmax(x = dataisme$raw_values)
+# Then we run the output through organizeme() to get a df back
+  #organized_output <- organizeme(data = dataisme, minmax_output = output) 
+# See the output from the functions:
+  #organized_output
+```

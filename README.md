@@ -8,7 +8,9 @@
 
 The goal of normalizeme is to help with the normalization of data. It
 also contains a few functions to help plot a very simple graph, in case
-you want to visualize the normalized data quickly.
+you want to visualize the normalized data quickly. In any case this
+package also contains a very small data set to try out the package. Its
+a very simple two column data frame.
 
 ## Installation
 
