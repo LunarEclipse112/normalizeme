@@ -1,12 +1,10 @@
 Package: normalizeme
-Title: What the Package Does (One Line, Title Case)
+Title: Min-Max Normalization of data 
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Luna", "Vester", , "luna@example.com", role = c("aut", "cre"))
+Description: This package adds a function to normalize data using the min max scaling formula and comes with a few other functions to quickly plot your data. It does need to run with ggplot2 and the tidyverse package.
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
